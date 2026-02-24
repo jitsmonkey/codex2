@@ -426,6 +426,195 @@ tbody td.num { font-family: var(--font-mono); font-weight: 500; color: var(--ink
 @media (max-width: 400px) {
   .hero-stats { grid-template-columns: 1fr; }
 }
+
+
+/* ===== Retro Macintosh + Modern Black/Yellow Revamp ===== */
+:root {
+  --bg-white: #111111;
+  --bg-light: #1a1a1a;
+  --bg-mid: #242424;
+  --bg-subtle: #2e2e2e;
+  --purple: #ffd400;
+  --purple-d: #e0bc00;
+  --purple-l: #ffe45c;
+  --purple-xl: #fff2a6;
+  --purple-soft: rgba(255, 212, 0, 0.12);
+  --green: #ffd400;
+  --green-d: #e0bc00;
+  --green-soft: rgba(255, 212, 0, 0.14);
+  --ink: #f8f8f8;
+  --ink-2: #ffffff;
+  --body: #ececec;
+  --secondary: #cccccc;
+  --muted: #a5a5a5;
+  --rule: rgba(255, 255, 255, 0.18);
+  --rule-strong: rgba(255, 212, 0, 0.45);
+  --font-display: 'Courier New', 'Lucida Console', monospace;
+  --font-body: 'Courier New', 'Lucida Console', monospace;
+  --font-mono: 'Courier New', 'Lucida Console', monospace;
+}
+
+body {
+  background: #0d0d0d;
+  color: var(--body);
+  text-rendering: geometricPrecision;
+}
+
+#preview-container {
+  background: repeating-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02) 0,
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.hero,
+.sec-problems,
+.sec-why,
+.sec-shift,
+.sec-gameplan,
+.sec-cta,
+.sec-money,
+.sec-timeline,
+.sec-breakdown,
+.sec-audit {
+  border-top: 3px solid var(--purple);
+  border-bottom: 3px solid #000;
+  background: linear-gradient(180deg, #121212 0%, #0b0b0b 100%);
+}
+
+.hero::before,
+.sec-money::before,
+.ten-x-callout::before {
+  opacity: 0.35;
+}
+
+.hero-inner,
+.container {
+  border: 2px solid #3a3a3a;
+  background: #121212;
+  box-shadow: 8px 8px 0 #000;
+  padding: 28px;
+}
+
+.hero-doc-id,
+.section-num,
+.eyebrow,
+.mc-label,
+.mc-sublabel,
+.ba-sub,
+.ns-desc,
+.tl-desc,
+.hero-lead,
+p {
+  color: #f2f2f2;
+}
+
+.hero-doc-id,
+.section-label,
+.section-num,
+.hero-cta-line,
+.cta-frame,
+.money-card,
+.issue,
+.fix,
+.game-item,
+.tl-row,
+.ns-card,
+.stat-card,
+.before-card,
+.after-card,
+.break-card,
+.prob-card,
+.why-card,
+.shift-card,
+.audit-card {
+  border-radius: 0 !important;
+}
+
+.section-num,
+.hero-cta-line,
+.cta-button,
+.mc-uplift,
+.ten-x-callout,
+.badge,
+.kpi-pill,
+.tl-day,
+.ns-num,
+.hero-stat-value,
+.impact-number {
+  background: #ffd400 !important;
+  color: #0c0c0c !important;
+  border-color: #fff2a6 !important;
+  text-shadow: none !important;
+}
+
+h1, h2, h3, h4,
+.hero-h1,
+.hero-h1 .accent,
+h2 .accent,
+.cta-frame-h2 .accent,
+.ten-x-headline,
+.next-steps-label,
+.stat-label,
+.tl-title,
+.ns-title,
+.cta-date-hook,
+strong,
+a,
+a:hover {
+  color: #ffe45c !important;
+}
+
+.hero-stat,
+.prob-card,
+.why-card,
+.shift-card,
+.issue,
+.fix,
+.game-item,
+.timeline,
+.ns-card,
+.cta-frame,
+.money-before,
+.money-after {
+  background: #1c1c1c !important;
+  border: 2px solid #3e3e3e !important;
+}
+
+.money-arrow,
+.ba-arrow,
+.cta-bounce-arrow {
+  color: #ffd400 !important;
+  opacity: 1;
+}
+
+.scan-line {
+  background: linear-gradient(90deg, transparent 0%, #ffd400 50%, transparent 100%);
+  height: 3px;
+}
+
+.hero::after {
+  content: '●  ●  ●';
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  letter-spacing: 0.3em;
+  color: #ffd400;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .hero-inner,
+  .container {
+    padding: 18px;
+    box-shadow: 5px 5px 0 #000;
+  }
+}
+
   </style>
 
 
